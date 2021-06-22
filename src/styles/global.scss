@@ -5,21 +5,13 @@
 }
 
 :root {
+  font-size: 62.5%;
+
   --white: #f8f8f8;
   --gray: #a8a8b3;
   --red: #ea4335;
   --purple: #835afd;
   --color-body: #29292e;
-}
-
-html {
-  @media(max-width: 1080px) {
-    font-size: 93.75%;
-  }
-
-  @media(max-width: 720px) {
-    font-size: 87.5%;
-  }
 }
 
 body {
