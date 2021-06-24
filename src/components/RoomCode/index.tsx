@@ -28,6 +28,7 @@ export function RoomCode(props: RoomCodeProps) {
         </div>
         <span>Sala #{props.code}</span>
       </button>
+
       <Toaster position="top-right" reverseOrder={false} />
     </>
   );

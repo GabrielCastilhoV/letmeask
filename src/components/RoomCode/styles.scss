@@ -9,6 +9,10 @@
 
   display: flex;
 
+  @media (max-width: 768px) {
+    border: 0;
+  }
+
   div {
     background: #835afd;
     padding: 0 1.2rem;
@@ -26,5 +30,9 @@
     width: 23rem;
     font-size: 1.4rem;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
