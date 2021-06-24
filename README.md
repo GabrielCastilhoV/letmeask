@@ -1,5 +1,7 @@
 <img src=".github/backgroundGithub.png"  alt="background for github" />
 
+<img src=".github/backgroundGithub.png"  alt="background for github" style="margin-top: 10px" />
+
 <p align="center">
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#getting_started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -49,4 +51,3 @@ This project was developed using the following technologies:
 - Push to your branch: `git push origin my-feature`.
 
 By Gabriel Castilho 👋🏽 [Contact](https://www.linkedin.com/in/gabrielcastilhov/)
-
