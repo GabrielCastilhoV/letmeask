@@ -1,7 +1,19 @@
+@keyframes headerAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #page-room {
   header {
     padding: 2.4rem;
     border-bottom: 0.1rem solid #e2e2e2;
+    animation: headerAnimation 1s;
 
     .content {
       max-width: 112rem;

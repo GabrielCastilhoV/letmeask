@@ -1,4 +1,5 @@
 import { useHistory } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 
 import illustrationImg from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
@@ -32,13 +33,21 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      alert("Room does not exist");
-      return;
+      return toast.error("Sala inexistente 😢", {
+        id: roomCode,
+        style: {
+          width: "auto",
+        },
+      });
     }
 
     if (roomRef.val().closedAt) {
-      alert("Room already closed.");
-      return;
+      return toast.error("Sala fechada 😢", {
+        id: roomCode,
+        style: {
+          width: "auto",
+        },
+      });
     }
 
     history.push(`rooms/${roomCode}`);
@@ -62,6 +71,7 @@ export function Home() {
             <img src={googleIconImg} alt="Logo do Google" />
             Crie sua sala com o Google
           </button>
+          <Toaster position="top-right" reverseOrder={false} />
 
           <div className="separator">ou entre em uma sala</div>
 

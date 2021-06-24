@@ -1,5 +1,6 @@
 import { Link, useHistory } from "react-router-dom";
 import { FormEvent, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 import illustrationImg from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
@@ -25,6 +26,13 @@ export function NewRoom() {
     const firebaseRoom = await roomRef.push({
       title: newRoom,
       authorId: user?.id,
+    });
+
+    toast.success("Sala criada com sucesso!", {
+      id: newRoom,
+      style: {
+        width: "auto",
+      },
     });
 
     history.push(`/rooms/${firebaseRoom.key}`);
@@ -54,6 +62,7 @@ export function NewRoom() {
               value={newRoom}
             />
             <Button type="submit">Criar sala</Button>
+            <Toaster position="top-right" reverseOrder={false} />
           </form>
           <p>
             Quer entrar em uma sala existente? <Link to="/">clique aqui</Link>

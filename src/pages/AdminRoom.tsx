@@ -4,8 +4,6 @@ import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 import { Question } from "../components/Question";
 
-// import { useAuth } from "../hooks/useAuth";
-
 import logoImg from "../assets/images/logo.svg";
 import deleteImg from "../assets/images/delete.svg";
 
@@ -18,7 +16,6 @@ type RoomParams = {
 };
 
 export function AdminRoom() {
-  // const { user } = useAuth();
   const history = useHistory();
   const { id: roomId } = useParams<RoomParams>();
 
@@ -28,6 +25,7 @@ export function AdminRoom() {
     await database.ref(`rooms/${roomId}`).update({
       closedAt: new Date(),
     });
+
     history.push("/");
   }
 
