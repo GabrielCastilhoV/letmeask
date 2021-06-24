@@ -1,3 +1,14 @@
+@keyframes asideAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 #page-auth {
   display: flex;
   align-items: stretch;
@@ -12,16 +23,34 @@
     flex-direction: column;
     justify-content: center;
 
+    animation: asideAnimation 3s;
     padding: 12rem 8rem;
+
+    @keyframes contentAnimation {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      50% {
+        opacity: 0.85;
+        transform: translateX(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
     img {
       max-width: 32rem;
+      animation: contentAnimation 3s;
     }
 
     strong {
       font: 700 3.6rem "Poppins", sans-serif;
       line-height: 4.2rem;
       margin-top: 1.6rem;
+      animation: contentAnimation 3s;
     }
 
     p {
@@ -29,6 +58,18 @@
       line-height: 3.2rem;
       margin-top: 1.6rem;
       color: var(--white);
+      animation: contentAnimation 3s;
+    }
+  }
+
+  @keyframes mainAnimation {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
@@ -50,6 +91,7 @@
     align-items: stretch;
     text-align: center;
 
+    animation: mainAnimation 3s;
     > img {
       align-self: center;
     }
