@@ -41,6 +41,10 @@
     max-width: 80rem;
     margin-inline: auto;
 
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+
     .room-title {
       margin: 3.2rem 0 2.4rem;
       display: flex;
