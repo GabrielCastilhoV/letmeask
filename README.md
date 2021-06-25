@@ -4,7 +4,9 @@
   <img src=".github/githubMobile.png"  alt="background for github" style="margin-top: 10px" />
 </div>
 
-<p align="center">
+##
+
+<p align="center" style="margin-top: 10px">
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#getting_started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
