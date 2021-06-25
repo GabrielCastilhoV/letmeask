@@ -1,6 +1,8 @@
 <img src=".github/backgroundGithub.png"  alt="background for github" />
 
-<img src=".github/githubMobile.png"  alt="background for github" style="margin-top: 10px" />
+<div style="text-align: center">
+  <img src=".github/githubMobile.png"  alt="background for github" style="margin-top: 10px" />
+</div>
 
 <p align="center">
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
