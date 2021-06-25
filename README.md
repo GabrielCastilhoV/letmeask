@@ -1,6 +1,6 @@
 <img src=".github/backgroundGithub.png"  alt="background for github" />
 
-<div style="text-align: center">
+<div align="center">
   <img src=".github/githubMobile.png"  alt="background for github" style="margin-top: 10px" />
 </div>
 
